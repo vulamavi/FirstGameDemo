@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NGUI/Scripts/Tweening/TweenWidth.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TouchHanler.cs">
     <Files>
-      <File FileName="Assets/NGUI/Scripts/Tweening/TweenWidth.cs" Line="75" Column="22" />
+      <File FileName="Assets/Scripts/GameControllerScripts/CreateBoot.cs" Line="33" Column="18" />
+      <File FileName="Assets/Scripts/AutoFly.cs" Line="28" Column="2" />
+      <File FileName="Assets/Scripts/TouchHanler.cs" Line="21" Column="2" />
+      <File FileName="Assets/Scripts/NPCScripts/autoFlyNoneNPC.cs" Line="22" Column="3" />
+      <File FileName="Assets/Scripts/GameControllerScripts/ImpactHandler.cs" Line="15" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

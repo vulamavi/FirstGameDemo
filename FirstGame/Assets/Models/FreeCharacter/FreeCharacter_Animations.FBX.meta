@@ -1,0 +1,735 @@
+fileFormatVersion: 2
+guid: 35b9df0d8ef0ab44abeb1b0a9e586310
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Backet_Bone
+    100002: CATHead
+    100004: CATLArm
+    100006: CATLCalf
+    100008: CATLClavicle
+    100010: CATLFingers1
+    100012: CATLFingers2
+    100014: CATLFoot
+    100016: CATLForearm
+    100018: CATLHand
+    100020: CATLLegPlatform
+    100022: CATLThigh
+    100024: CATLThumb1
+    100026: CATLThumb2
+    100028: CATNeck
+    100030: CATPelvis
+    100032: CATRArm
+    100034: CATRCalf
+    100036: CATRClavicle
+    100038: CATRFingers1
+    100040: CATRFingers2
+    100042: CATRFoot
+    100044: CATRForearm
+    100046: CATRHand
+    100048: CATRigLArmIKTarget
+    100050: CATRigLLegDigit11
+    100052: CATRigLLegDigit12
+    100054: CATRigRArmIKTarget
+    100056: CATRLegPlatform
+    100058: CATRThigh
+    100060: CATRThumb1
+    100062: CATRThumb2
+    100064: CATRToe1
+    100066: CATRToe2
+    100068: CATSpine1
+    100070: CATSpine2
+    100072: CATSpine3
+    100074: Character001
+    100076: //RootNode
+    100078: Head_slot
+    100080: LBracers_slot
+    100082: LShoulders_slot
+    100084: Particle View 001
+    100086: RBracers_slot
+    100088: RShoulders_slot
+    100090: ShieldBow_Slot
+    100092: WeaponSlot
+    100094: WeaponSlotPelvis
+    400000: Backet_Bone
+    400002: CATHead
+    400004: CATLArm
+    400006: CATLCalf
+    400008: CATLClavicle
+    400010: CATLFingers1
+    400012: CATLFingers2
+    400014: CATLFoot
+    400016: CATLForearm
+    400018: CATLHand
+    400020: CATLLegPlatform
+    400022: CATLThigh
+    400024: CATLThumb1
+    400026: CATLThumb2
+    400028: CATNeck
+    400030: CATPelvis
+    400032: CATRArm
+    400034: CATRCalf
+    400036: CATRClavicle
+    400038: CATRFingers1
+    400040: CATRFingers2
+    400042: CATRFoot
+    400044: CATRForearm
+    400046: CATRHand
+    400048: CATRigLArmIKTarget
+    400050: CATRigLLegDigit11
+    400052: CATRigLLegDigit12
+    400054: CATRigRArmIKTarget
+    400056: CATRLegPlatform
+    400058: CATRThigh
+    400060: CATRThumb1
+    400062: CATRThumb2
+    400064: CATRToe1
+    400066: CATRToe2
+    400068: CATSpine1
+    400070: CATSpine2
+    400072: CATSpine3
+    400074: Character001
+    400076: //RootNode
+    400078: Head_slot
+    400080: LBracers_slot
+    400082: LShoulders_slot
+    400084: Particle View 001
+    400086: RBracers_slot
+    400088: RShoulders_slot
+    400090: ShieldBow_Slot
+    400092: WeaponSlot
+    400094: WeaponSlotPelvis
+    7400000: Walk
+    7400002: Idle
+    7400004: Lumbering
+    7400006: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 60
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 190
+      lastFrame: 220
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lumbering
+      takeName: Take 001
+      firstFrame: 380
+      lastFrame: 410
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: CATPelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLThigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRThigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLCalf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRCalf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATSpine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATSpine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATNeck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATHead
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLClavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRClavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLForearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRForearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRigLLegDigit11
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRToe1
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_slot
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLFingers1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATLFingers2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ShieldBow_Slot
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRFingers1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CATRFingers2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WeaponSlot
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: FreeCharacter_Animations(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: CATLLegPlatform
+      position: {x: -.0975677818, y: -3.27738747e-09, z: -.0201164931}
+      rotation: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: CATPelvis
+      position: {x: -.00368071906, y: .273923993, z: .0168338176}
+      rotation: {x: .504149795, y: -.470770836, z: -.49414289, w: .529179156}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: CATLThigh
+      position: {x: .0538156889, y: -1.43051144e-08, z: .105012469}
+      rotation: {x: -.116620824, y: .992202938, z: .00174577534, w: .0439304113}
+      scale: {x: .999998152, y: 1.00000012, z: 1.00000238}
+      transformModified: 1
+    - name: CATLCalf
+      position: {x: -.0864880458, y: -9.53674295e-09, z: 9.53674295e-09}
+      rotation: {x: .0947534144, y: -3.9845705e-05, z: .343408883, w: .934394002}
+      scale: {x: .999985397, y: 1.00000215, z: 1.00001335}
+      transformModified: 1
+    - name: CATLFoot
+      position: {x: -.122412704, y: 0, z: 9.53674295e-09}
+      rotation: {x: -.0410149693, y: -.0208064541, z: -.695560277, w: .716994286}
+      scale: {x: .999985337, y: 1.00001466, z: 1.00000024}
+      transformModified: 1
+    - name: CATRigLLegDigit11
+      position: {x: -.050501626, y: 2.38418574e-09, z: 0}
+      rotation: {x: -.0220821183, y: -.0626124963, z: -.245896742, w: .967019558}
+      scale: {x: .999981105, y: 1.0000037, z: 1.00001645}
+      transformModified: 1
+    - name: CATRigLLegDigit12
+      position: {x: -.0225000028, y: 0, z: -9.53674295e-09}
+      rotation: {x: 2.84216959e-14, y: -1.87121521e-14, z: 5.3183111e-28, w: 1}
+      scale: {x: .999970198, y: 1.00000048, z: 1.00003195}
+      transformModified: 1
+    - name: CATRThigh
+      position: {x: .053815648, y: -2.98023224e-08, z: -.105012432}
+      rotation: {x: -.1082277, y: .987269163, z: -.115405172, w: .0163735449}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: CATRCalf
+      position: {x: -.0864879861, y: 0, z: 9.53674295e-09}
+      rotation: {x: -.104742162, y: .0238009337, z: .332044214, w: .937128127}
+      scale: {x: 1, y: 1.00000024, z: 1.00000048}
+      transformModified: 1
+    - name: CATRFoot
+      position: {x: -.122412793, y: 0, z: 9.53674295e-09}
+      rotation: {x: .033049617, y: -.0759193823, z: -.755812407, w: .649531841}
+      scale: {x: .999999702, y: 1.00000012, z: .999999821}
+      transformModified: 1
+    - name: CATRToe1
+      position: {x: -.0505016111, y: 0, z: -9.53674295e-09}
+      rotation: {x: .0411848314, y: -.0203468371, z: -.057124529, w: .997309685}
+      scale: {x: .99999994, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: CATRToe2
+      position: {x: -.022499986, y: 0, z: -9.53674295e-09}
+      rotation: {x: -7.45057704e-09, y: -3.72529074e-09, z: -7.45058149e-09, w: 1}
+      scale: {x: .99999994, y: 1.00000048, z: 1.00000072}
+      transformModified: 1
+    - name: CATSpine1
+      position: {x: -.0373855755, y: 9.53674295e-09, z: -2.38418574e-09}
+      rotation: {x: .0086015854, y: -.0144378832, z: -.0108191585, w: .999800265}
+      scale: {x: 1.00000024, y: 1.00000036, z: 1.00000024}
+      transformModified: 1
+    - name: CATSpine2
+      position: {x: -.144996181, y: 2.38418574e-09, z: 2.38418574e-09}
+      rotation: {x: .0318230279, y: -.058779195, z: -.0401399247, w: .996955931}
+      scale: {x: .999999881, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: CATSpine3
+      position: {x: -.118525505, y: 2.38418574e-09, z: -2.38418574e-09}
+      rotation: {x: .00610629749, y: -.012033321, z: -.00753638614, w: .999880552}
+      scale: {x: 1, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: Backet_Bone
+      position: {x: .0683899298, y: -.257941365, z: -.000636234297}
+      rotation: {x: -2.22087237e-09, y: 3.55339491e-09, z: -3.19805515e-08, w: 1}
+      scale: {x: 1.04837513, y: 1.04837465, z: 1.04837489}
+      transformModified: 1
+    - name: CATLClavicle
+      position: {x: -1.14440915e-07, y: -2.38418574e-09, z: .0521761701}
+      rotation: {x: .0348802879, y: .635670602, z: .0315692984, w: .770525634}
+      scale: {x: 1.00000024, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: CATLArm
+      position: {x: -.0883241221, y: 4.52995295e-08, z: 3.05175774e-07}
+      rotation: {x: -.269351274, y: .170061469, z: -.0270608272, w: .947521329}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: CATLForearm
+      position: {x: -.182559654, y: 1.33514405e-07, z: -1.90734852e-07}
+      rotation: {x: -.000147409606, y: -.00164781418, z: -.0438022241, w: .999038875}
+      scale: {x: .999999881, y: 1.00000048, z: 1.00000048}
+      transformModified: 1
+    - name: CATLHand
+      position: {x: -.15997231, y: 1.90734859e-08, z: 0}
+      rotation: {x: .188147932, y: -.938456655, z: .270664185, w: .103152491}
+      scale: {x: .999999344, y: .999999225, z: 1.00000226}
+      transformModified: 1
+    - name: CATLFingers1
+      position: {x: -.0703640133, y: -.00293497089, z: .000196342458}
+      rotation: {x: -4.30457067e-06, y: -7.65360528e-06, z: -.964006782, w: .265877724}
+      scale: {x: .999998331, y: 1.00000107, z: 1.00000358}
+      transformModified: 1
+    - name: CATLFingers2
+      position: {x: -.0610295087, y: -9.53674295e-09, z: 0}
+      rotation: {x: -1.14150049e-08, y: -9.57832125e-09, z: -.766044617, w: .642787397}
+      scale: {x: .999995589, y: 1.00000298, z: 1.00000691}
+      transformModified: 1
+    - name: CATLThumb1
+      position: {x: -.047959622, y: .00790931657, z: -.0658756644}
+      rotation: {x: .0967389718, y: -.627022624, z: -.543095052, w: .550029099}
+      scale: {x: .999998868, y: .999999285, z: 1.00000489}
+      transformModified: 1
+    - name: CATLThumb2
+      position: {x: -.0370345302, y: 1.90734859e-08, z: 1.90734859e-08}
+      rotation: {x: -.0688756406, y: .110650018, z: -.425386339, w: .89557755}
+      scale: {x: .999998033, y: 1.00000107, z: 1.00000644}
+      transformModified: 1
+    - name: ShieldBow_Slot
+      position: {x: .00307174679, y: .00146913528, z: -3.81469718e-08}
+      rotation: {x: 5.10713924e-08, y: -4.90285501e-08, z: 3.67714179e-08, w: 1}
+      scale: {x: .911784649, y: .911784887, z: .91178441}
+      transformModified: 1
+    - name: LBracers_slot
+      position: {x: -.0121282954, y: .000917644473, z: .000771217339}
+      rotation: {x: 6.58963089e-08, y: -7.68789832e-08, z: 1.0982717e-08, w: 1}
+      scale: {x: .678391635, y: .678391337, z: .678391457}
+      transformModified: 1
+    - name: LShoulders_slot
+      position: {x: -.0130049512, y: .000397052761, z: -.000376930228}
+      rotation: {x: 1.30444723e-05, y: 2.12685158e-08, z: .00163045991, w: .999998689}
+      scale: {x: .81155622, y: .811556637, z: .811556578}
+      transformModified: 1
+    - name: CATNeck
+      position: {x: -.0366283394, y: 1.43051144e-08, z: 0}
+      rotation: {x: -.0167341158, y: .0279476121, z: .0311902165, w: .998982549}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: CATHead
+      position: {x: -.193934664, y: 2.38418574e-09, z: 0}
+      rotation: {x: -.0167420935, y: .0238675531, z: .0266255047, w: .999220252}
+      scale: {x: .99999994, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Head_slot
+      position: {x: -0, y: .00727956742, z: -.000636272423}
+      rotation: {x: 1.82728385e-14, y: -6.7775625e-15, z: 1.3555125e-14, w: 1}
+      scale: {x: 1.04837501, y: 1.04837477, z: 1.04837489}
+      transformModified: 1
+    - name: CATRClavicle
+      position: {x: 3.81469718e-08, y: 1.43051144e-08, z: -.0521761775}
+      rotation: {x: -.0396072939, y: -.588380873, z: .0523159392, w: .805917025}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: CATRArm
+      position: {x: -.0883241221, y: 1.33514405e-07, z: -8.7738033e-07}
+      rotation: {x: .0101347575, y: -.118002556, z: -.0392268412, w: .992186487}
+      scale: {x: .999999523, y: 1.00000095, z: 1.00000226}
+      transformModified: 1
+    - name: CATRForearm
+      position: {x: -.182558402, y: -8.92877551e-07, z: 6.86645478e-07}
+      rotation: {x: .00860574655, y: .013120099, z: -.0190501288, w: .99969542}
+      scale: {x: 1.00000453, y: 1.00000238, z: .999994874}
+      transformModified: 1
+    - name: CATRHand
+      position: {x: -.159972355, y: 0, z: 0}
+      rotation: {x: -.652177572, y: .242889851, z: .158632725, w: .700360417}
+      scale: {x: .999988973, y: 1.00000477, z: 1.00000715}
+      transformModified: 1
+    - name: CATRFingers1
+      position: {x: -.0703639984, y: -.00293491362, z: -.000196361536}
+      rotation: {x: -.0325748287, y: -.0465216488, z: -.416562825, w: .907331288}
+      scale: {x: .999986172, y: 1.00000978, z: 1.00001049}
+      transformModified: 1
+    - name: CATRFingers2
+      position: {x: -.0610295087, y: 0, z: 0}
+      rotation: {x: -2.26787211e-08, y: -2.95556184e-08, z: -.608759701, w: .79335469}
+      scale: {x: .999971092, y: 1.00002074, z: 1.00002098}
+      transformModified: 1
+    - name: CATRThumb1
+      position: {x: -.0479595847, y: .00790935475, z: .0658755675}
+      rotation: {x: .223247379, y: .202928349, z: -.401273668, w: .864846885}
+      scale: {x: .99998647, y: 1.00001061, z: 1.00000966}
+      transformModified: 1
+    - name: CATRThumb2
+      position: {x: -.0370345302, y: -3.81469718e-08, z: 0}
+      rotation: {x: .0123070134, y: -.460676312, z: -.0119747184, w: .887402117}
+      scale: {x: .999968112, y: 1.00000465, z: 1.00004017}
+      transformModified: 1
+    - name: WeaponSlot
+      position: {x: -.0453208908, y: .0394573025, z: -.00922016148}
+      rotation: {x: -.711484015, y: -.00171989482, z: -.000392051326, w: .702700019}
+      scale: {x: 1, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: RBracers_slot
+      position: {x: -.0128930854, y: .00093139644, z: -.000762672396}
+      rotation: {x: 1.09827178e-08, y: -2.41240119e-16, z: -2.19654304e-08, w: 1}
+      scale: {x: .678391516, y: .678391278, z: .678391457}
+      transformModified: 1
+    - name: RShoulders_slot
+      position: {x: -.0130035393, y: .000439466239, z: -.000376930228}
+      rotation: {x: 8.8363322e-08, y: -7.70667337e-15, z: -8.72157599e-08, w: 1}
+      scale: {x: .811556458, y: .811556637, z: .811556578}
+      transformModified: 1
+    - name: WeaponSlotPelvis
+      position: {x: -.0702964738, y: .0703318566, z: -.151225522}
+      rotation: {x: -.101624005, y: .958863378, z: .082490243, w: -.251890779}
+      scale: {x: 1.00000024, y: 1.0000006, z: 1.0000006}
+      transformModified: 1
+    - name: CATRigLArmIKTarget
+      position: {x: -.0697709993, y: .300850242, z: -.0411364362}
+      rotation: {x: .791395009, y: .571093798, z: .0332486145, w: -.215500265}
+      scale: {x: .999997616, y: .999998331, z: 1.00000286}
+      transformModified: 1
+    - name: CATRigRArmIKTarget
+      position: {x: -.178082526, y: -.257881582, z: .0541486926}
+      rotation: {x: -.717299223, y: .122306332, z: -.128172383, w: .673865616}
+      scale: {x: .999997377, y: .999999762, z: 1.00000334}
+      transformModified: 1
+    - name: CATRLegPlatform
+      position: {x: .122932233, y: .0302255098, z: .0395963602}
+      rotation: {x: -.478261471, y: .500964105, z: .601257503, w: -.398485035}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Character001
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: .5, y: -.5, z: -.5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Particle View 001
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 1
+  userData: 

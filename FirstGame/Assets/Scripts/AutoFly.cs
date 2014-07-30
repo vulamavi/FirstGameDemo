@@ -1,20 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AutoFly : MonoBehaviour {
+	//owner
+	public NetworkPlayer owner;
 
 	public bool bMaxPos = false;
 	public bool bOut = false;
 	public float vFlySpeed;
 	public float vDownSpeed;
+	public float vMoveHorizonal;
 	// Use this for initialization
 	void Start () {
-	
+		vFlySpeed = ((float)Random.Range (4, 9))/1000;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		autoFlyCharacter ();
+		autoMove ();
 	}
 	 
 	//set Speed
@@ -29,29 +34,69 @@ public class AutoFly : MonoBehaviour {
 	//fly auto
 	void autoFlyCharacter(){
 		if (bMaxPos && !bOut) {
-			GameObject.Find("Scene").transform.Find("Sky01").transform.GetComponent<Animator>().SetBool("bStart", true);
-			GameObject.Find("Scene").transform.Find("Sky01").transform.GetComponent<Animator>().SetBool("bStop", false);
-			
-			GameObject.Find("Scene").transform.Find("Sky02").transform.GetComponent<Animator>().SetBool("bStart", true);
-			GameObject.Find("Scene").transform.Find("Sky02").transform.GetComponent<Animator>().SetBool("bStop", false);
-
-			GameObject.Find("Scene").transform.Find("House").transform.GetComponent<Animator>().SetBool("bStart", true);
-
+			gameObject.transform.Translate(new Vector3(0, vFlySpeed, 0));
+//			Camera.main.transform.Translate(new Vector3(0, vFlySpeed, 0));
+//			GameObject.Find("UI Root").transform.Find("Sky01").transform.GetComponent<Animator>().SetBool("bStart", true);
+//			GameObject.Find("UI Root").transform.Find("Sky01").transform.GetComponent<Animator>().SetBool("bStop", false);
+//			GameObject.Find("UI Root").transform.Find("Sky02").transform.GetComponent<Animator>().SetBool("bStart", true);
+//			GameObject.Find("UI Root").transform.Find("Sky02").transform.GetComponent<Animator>().SetBool("bStop", false);
+//			GameObject.Find("Scene").transform.Find("House").transform.GetComponent<Animator>().SetBool("bStart", true);
 		}
 		else if(!bOut){
 			gameObject.transform.Translate(new Vector3(0, vFlySpeed, 0));
+//			Camera.main.transform.Translate(new Vector3(0, vFlySpeed, 0));
 		}
 		else if(bOut){
 			Debug.Log("restart bOut");
 			gameObject.transform.Translate(new Vector3(0, vDownSpeed * (-1), 0));
-			if(Camera.main.WorldToScreenPoint (gameObject.transform.position).y <= Screen.height * 1 / 6){
+			if(Camera.main.WorldToScreenPoint (gameObject.transform.position).y <= Screen.height * 3 / 6 && gameObject.transform.position.y >= (float)(0)){
+//				Camera.main.transform.Translate(new Vector3(0, vDownSpeed * (-1), 0));
+			}
+			if(gameObject.transform.position.y <= (float)(-0.5842785)){
+				Debug.Log("bout  = ........false ......");
 				bOut = false;
 				gameObject.transform.Find("Bubble").gameObject.SetActive(true);
 			}
 		}
 		
-		if (Camera.main.WorldToScreenPoint (gameObject.transform.position).y >= Screen.height * 3 / 4) {
-			bMaxPos = true;
+//		if (Camera.main.WorldToScreenPoint (gameObject.transform.position).y >= Screen.height * 5 / 8) {
+//			bMaxPos = true;
+//		}
+	}
+
+	//move player left- right
+	void autoMove(){
+		Vector3 dir = Vector3.zero;
+		dir.z = Input.acceleration.z;
+		dir.y = Input.acceleration.y;
+		dir.x = -Input.acceleration.x;
+
+		if (dir.x > 0) {
+			if(Camera.main.WorldToScreenPoint (gameObject.transform.position).x < 20){
+
+			}
+			else{
+//				transform.Translate(new Vector3((-1) *vMoveHorizonal * System.Math.Abs(dir.x), 0, 0));
+				transform.position = Vector3.Slerp(transform.position, transform .position + new Vector3((-1) *vMoveHorizonal * System.Math.Abs(dir.x), 0, 0), Time.deltaTime * 15);
+			}
+		}
+		if(dir.x < 0){
+			if(Camera.main.WorldToScreenPoint (gameObject.transform.position).x > Screen.width - 20 ){
+			}
+			else {
+//				transform.Translate(new Vector3(vMoveHorizonal * System.Math.Abs(dir.x) , 0, 0));
+				transform.position = Vector3.Slerp(transform.position, transform .position + new Vector3(vMoveHorizonal * System.Math.Abs(dir.x) , 0, 0), Time.deltaTime * 15);
+			}
 		}
 	}
+
+	[RPC]
+	void SetPlayer(NetworkPlayer player){
+		Debug.Log("setPlayer........");
+		owner = player;
+		if(player==Network.player){
+			//Hey thats us! We can control this player: enable this script (this enables Update());
+			enabled=true;
+		}
+	}	
 }

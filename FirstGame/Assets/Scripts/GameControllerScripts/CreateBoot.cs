@@ -6,11 +6,16 @@ public class CreateBoot : MonoBehaviour {
 	//count time
 	private float time;
 
+	//array position create NoneNPC
 	public List<Vector3> arrPositionStart;
 
 	//array NPC
 	public List<GameObject> arrNPC;
 
+	//player below
+	public GameObject PlayerBelow;
+
+	//objects NPC
 	public GameObject NPCNone;
 	public GameObject NPC1;
 	public GameObject NPC2;
@@ -18,12 +23,14 @@ public class CreateBoot : MonoBehaviour {
 	public GameObject NPC4;
 	public GameObject NPC5;
 
+	//time create NPC
 	public float timeCreateNone;
 	public float timeCreateNPC1;
 	public float timeCreateNPC2;
 	public float timeCreateNPC3;
 	public float timeCreateNPC4;
 	public float timeCreateNPC5;
+
 	// Use this for initialization
 	void Start () {
 		time = 0;
@@ -48,8 +55,8 @@ public class CreateBoot : MonoBehaviour {
 
 	void autoCreateNoneNPC(){
 		if ((int)(time / timeCreateNone) > 1) {
-			Debug.Log("create non-character");
-			createNoneNPC(NPCNone, arrPositionStart[Random.Range(0, arrPositionStart.Count)]);	
+//			Debug.Log("create non-character");
+			createNoneNPC(NPCNone,new Vector3(arrPositionStart[Random.Range(0, arrPositionStart.Count)].x, PlayerBelow.transform.position.y - (float)(0.6), arrPositionStart[Random.Range(0, arrPositionStart.Count)].z));	
 			time = 0;
 		}
 	}

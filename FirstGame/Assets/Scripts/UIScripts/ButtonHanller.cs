@@ -2,12 +2,16 @@
 using System.Collections;
 
 public class ButtonHanller : MonoBehaviour {
-	GameObject player;
+	public GameObject player;
 	Quaternion quaternionBeginPosition;
-
+	GameObject Ax;
+//	public GameObject otherPlayer;
+	private bool bAttack;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find ("Player");
+		bAttack = false;
+//		player = GameObject.Find ("Player");
+		Ax = player.transform.Find ("Ax").gameObject;
 		quaternionBeginPosition = player.transform.rotation;
 	}
 	
@@ -18,6 +22,10 @@ public class ButtonHanller : MonoBehaviour {
 				player.transform.GetComponent<Animator> ().SetBool ("bAttack", false);
 				player.transform.rotation = quaternionBeginPosition;
 			}
+		}
+
+		if (bAttack) {
+//			Ax.transform.position = Vector3.Slerp(Ax.transform.position, otherPlayer.transform.position, Time.deltaTime * 3);
 		}
 	}
 
@@ -30,5 +38,6 @@ public class ButtonHanller : MonoBehaviour {
 	void attack(){
 		Debug.Log("Attack");
 		player.transform.GetComponent<Animator> ().SetBool ("bAttack", true);
+		bAttack = true;
 	}
 }

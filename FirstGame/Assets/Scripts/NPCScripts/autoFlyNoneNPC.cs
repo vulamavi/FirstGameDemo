@@ -6,7 +6,7 @@ public class autoFlyNoneNPC : MonoBehaviour {
 	public bool bLife = true;
 
 	void Start () {
-		vFlySpeed = (float)(Random.Range (3, 8)) / 1000;
+		vFlySpeed = (float)(Random.Range (8, 14)) / 1000;
 	}
 	
 	// Update is called once per frame

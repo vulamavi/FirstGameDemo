@@ -59,7 +59,6 @@ function Update(){
 				//SendMovementInput(HInput, VInput); //Use this (and line 64) for simple "prediction"
 				networkView.RPC("SendMovementInput", RPCMode.Server, HInput, VInput);
 			}
-			
 		}
 	}
 	
@@ -72,9 +71,6 @@ function Update(){
 	}
 	
 }
-
-
-
 
 @RPC
 function SendMovementInput(HInput : float, VInput : float){	

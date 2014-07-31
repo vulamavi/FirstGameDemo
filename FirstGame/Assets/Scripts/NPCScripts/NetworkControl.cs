@@ -42,11 +42,9 @@ public class NetworkControl : MonoBehaviour {
 //		playerScripts.Add(myNewTrans.GetComponent<NetworkControl>());
 		
 		//Call an RPC on this new networkview, set the player who controls this player
-		newObjectsNetworkview.RPC("SetPlayer", RPCMode.AllBuffered, newPlayer);//Set it on the owner
+//		newObjectsNetworkview.RPC("SetPlayer", RPCMode.AllBuffered, newPlayer);//Set it on the owner
 	}
-	
-	
-	
+
 	void OnPlayerDisconnected(NetworkPlayer player) {
 		Debug.Log("Clean up after player " + player);
 		
@@ -74,4 +72,28 @@ public class NetworkControl : MonoBehaviour {
 		Debug.Log("Resetting the scene the easy way.");
 //		Application.LoadLevel(Application.loadedLevel);	
 	}
+
+//	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
+//	{
+//		if (stream.isWriting){
+//			//This is executed on the owner of the networkview
+//			//The owner sends it's position over the network
+//			Vector3 pos =  new Vector3();
+//			pos = transform.position;		
+//			stream.Serialize(ref pos);//"Encode" it, and send it
+//		}else{
+//			//Executed on all non-owners
+//			//This client receive a position and set the object to it
+//			
+//			Vector3 posReceive =  new Vector3();
+//			posReceive = Vector3.zero;
+//			stream.Serialize(ref posReceive); //"Decode" it and receive it
+//			
+//			//We've just recieved the current servers position of this object in 'posReceive'.
+//			transform.position = posReceive;		
+//			//To reduce laggy movement a bit you could comment the line above and use position lerping below instead:	
+//			//transform.position = Vector3.Lerp(transform.position, posReceive, 0.9); //"lerp" to the posReceive by 90%
+//			
+//		}
+//	}
 }

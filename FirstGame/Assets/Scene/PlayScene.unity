@@ -3443,11 +3443,11 @@ Transform:
   m_LocalPosition: {x: -1.30050325, y: 1.53150737, z: -4.37016344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1029118318}
+  - {fileID: 1495279474}
   - {fileID: 1042617214}
   - {fileID: 1704241690}
   - {fileID: 1195986111}
-  - {fileID: 1029118318}
-  - {fileID: 1495279474}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &671038915
@@ -5333,13 +5333,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 617
+  mWidth: 1493
   mHeight: 126
   mDepth: 3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.89682531
+  aspectRatio: 11.849206
   mRect:
     serializedVersion: 2
     x: 0
@@ -5406,7 +5406,7 @@ Transform:
   - {fileID: 316344452}
   - {fileID: 1870833796}
   m_Father: {fileID: 657204840}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!1 &1031844014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5517,7 +5517,7 @@ Transform:
   - {fileID: 156259297}
   - {fileID: 1006158321}
   m_Father: {fileID: 657204840}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!1 &1048135151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,7 +5992,7 @@ Transform:
   - {fileID: 573838748}
   - {fileID: 1894941368}
   m_Father: {fileID: 657204840}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &1205172800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,7 +6171,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: fee46b827274e694aa251e2d36700135, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -216.499969
+      value: -654.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fee46b827274e694aa251e2d36700135, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7227,13 +7227,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 671
+  mWidth: 1547
   mHeight: 104
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.45192289
+  aspectRatio: 14.875
   mRect:
     serializedVersion: 2
     x: 0
@@ -7586,7 +7586,7 @@ Transform:
   - {fileID: 410195262}
   - {fileID: 2103555796}
   m_Father: {fileID: 657204840}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!1 &1495333919
 GameObject:
   m_ObjectHideFlags: 0
@@ -8757,7 +8757,7 @@ Transform:
   - {fileID: 2072108728}
   - {fileID: 1655476195}
   m_Father: {fileID: 657204840}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!1 &1713587292
 GameObject:
   m_ObjectHideFlags: 0
@@ -9300,7 +9300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840101878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -274.694, y: 446, z: 0}
+  m_LocalPosition: {x: -712.651001, y: 446, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 465818610}
@@ -9482,7 +9482,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.23529434
+  aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Stripes 3
   mType: 2
@@ -11092,7 +11092,7 @@ Transform:
   m_PrefabInternal: {fileID: 1276565139}
   m_GameObject: {fileID: 2131192025}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
-  m_LocalPosition: {x: -216.499969, y: 2, z: 0}
+  m_LocalPosition: {x: -654.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1979880869}

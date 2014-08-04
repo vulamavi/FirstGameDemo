@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   HostType: 1
-  ServerAddress: app-eu.exitgamescloud.com
+  ServerAddress: app-asia.exitgamescloud.com
   ServerPort: 5055
   AppID: a91bd076-ae2f-460f-aa9c-677965ca6aa7
   PingCloudServersOnAwake: 1
@@ -27,4 +27,5 @@ MonoBehaviour:
   - InstantiateRpc
   - OnAwakeRPC
   - DestroyRpc
+  - initPlayer
   DisableAutoOpenWizard: 0

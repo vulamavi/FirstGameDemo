@@ -186,34 +186,57 @@ using System.Collections.Generic;
 public class NetworkConnected : Photon.MonoBehaviour {
 	public string roomName;
 	public List<Transform> arrPlayerStartPos;
+
+	private bool isPlay = false;
+	GameObject objOwner;
 	void Start(){
 		Connect();
+	}
+
+	void Update(){
+		if (!isPlay && GameObject.FindGameObjectsWithTag ("Player").Length >= 2) {
+			startGame();	
+			Debug.Log("Started");
+		}
+	}
+
+	void startGame(){
+		isPlay = true;
+		objOwner.transform.GetComponent<AutoFly> ().enabled = true;
 	}
 
 	void Connect(){
 		PhotonNetwork.ConnectUsingSettings ("my game");
 	}
-
+	
 	void OnGUI(){
 		GUILayout.Label (PhotonNetwork.connectionStateDetailed.ToString ());
+		GUILayout.Label (PhotonNetwork.GetPing().ToString ());
 	}
-
+	
 	void OnJoinedLobby(){
 		PhotonNetwork.JoinRandomRoom ();
 	}
-
+	
 	void OnPhotonRandomJoinFailed(){
 		Debug.Log (" join room is fail");
 		PhotonNetwork.CreateRoom (null);
 	}
-
+	
 	void OnJoinedRoom(){
 		Debug.Log("On joined room");
 		SpawnMyPlayer ();
 	}
-
+	
 	void SpawnMyPlayer(){
-		GameObject objOwner = (GameObject) PhotonNetwork.Instantiate ("PlayerAll", arrPlayerStartPos[Random.Range(0, arrPlayerStartPos.Count)].position, Quaternion.identity, 0);
+		objOwner = (GameObject) PhotonNetwork.Instantiate ("PlayerAll", arrPlayerStartPos[Random.Range(0, arrPlayerStartPos.Count)].position, Quaternion.identity, 0);
 		Camera.main.GetComponent<AutoFollow> ().playerFollow = objOwner;
+		//			photonView.RPC ("SetLootEnable", PhotonTargets.All);
+	}
+
+	[RPC]
+	void initPlayer(Vector3 position){
+		Debug.Log(" created one player....");
+		PhotonNetwork.Instantiate ("PlayerAll", arrPlayerStartPos [Random.Range (0, arrPlayerStartPos.Count)].position, Quaternion.identity, 1);
 	}
 }

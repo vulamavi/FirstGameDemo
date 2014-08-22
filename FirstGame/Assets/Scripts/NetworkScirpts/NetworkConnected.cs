@@ -195,7 +195,7 @@ public class NetworkConnected : Photon.MonoBehaviour {
 
 	void Update(){
 		if (!isPlay && GameObject.FindGameObjectsWithTag ("Player").Length >= 2) {
-			startGame();	
+			startGame();
 			Debug.Log("Started");
 		}
 	}
@@ -229,9 +229,11 @@ public class NetworkConnected : Photon.MonoBehaviour {
 	}
 	
 	void SpawnMyPlayer(){
-		objOwner = (GameObject) PhotonNetwork.Instantiate ("PlayerAll", arrPlayerStartPos[Random.Range(0, arrPlayerStartPos.Count)].position, Quaternion.identity, 0);
-		Camera.main.GetComponent<AutoFollow> ().playerFollow = objOwner;
-		//			photonView.RPC ("SetLootEnable", PhotonTargets.All);
+		if (objOwner == null) {
+			objOwner = (GameObject) PhotonNetwork.Instantiate ("PlayerAll", arrPlayerStartPos[Random.Range(0, arrPlayerStartPos.Count)].position, Quaternion.identity, 0);
+			Camera.main.GetComponent<AutoFollow> ().playerFollow = objOwner;
+			objOwner.transform.GetComponent<BoxCollider>().enabled = true;
+		}
 	}
 
 	[RPC]

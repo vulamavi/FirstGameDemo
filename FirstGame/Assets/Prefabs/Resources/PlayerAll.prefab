@@ -1703,7 +1703,7 @@ BoxCollider:
   m_GameObject: {fileID: 100100}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: .170000002, y: .170000002, z: .170000002}
   m_Center: {x: .0250000004, y: 0, z: -.0250000004}
@@ -1807,8 +1807,8 @@ MonoBehaviour:
   group: 0
   prefixBackup: -1
   observed: {fileID: 11400012}
-  synchronization: 2
-  onSerializeTransformOption: 3
+  synchronization: 1
+  onSerializeTransformOption: 0
   onSerializeRigidBodyOption: 2
   instantiationId: -1
 --- !u!114 &11400012

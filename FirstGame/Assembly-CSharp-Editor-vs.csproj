@@ -180,16 +180,16 @@
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Volumes/data/Vu/myProject/FirstGame/FirstGameDemo/FirstGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Volumes/data/Vu/myProject/FirstGameDemo/FirstGameDemo/FirstGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>/Volumes/data/Vu/myProject/FirstGame/FirstGameDemo/FirstGame/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>/Volumes/data/Vu/myProject/FirstGameDemo/FirstGameDemo/FirstGame/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>/Volumes/data/Vu/myProject/FirstGame/FirstGameDemo/FirstGame/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>/Volumes/data/Vu/myProject/FirstGameDemo/FirstGameDemo/FirstGame/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>/Volumes/data/Vu/myProject/FirstGame/FirstGameDemo/FirstGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>/Volumes/data/Vu/myProject/FirstGameDemo/FirstGameDemo/FirstGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
